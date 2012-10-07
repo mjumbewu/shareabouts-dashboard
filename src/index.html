@@ -1,0 +1,73 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="libs/leaflet/0.4.4/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="libs/leaflet/0.4.4/leaflet.ie.css" />
+    <![endif]-->
+
+    <link href="libs/bootstrap/2.1.1/css/bootstrap.css" rel="stylesheet">
+    <link href="libs/bootstrap/2.1.1/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Shareabouts Dashboard</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="fullscreen">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span9">
+            <div id="map"></div>
+          </div>
+          <div class="span3 hidden-phone">Sidebar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="libs/jquery/1.8.2/jquery.js"></script>
+    <script src="libs/underscore/1.4.1/underscore.js"></script>
+    <script src="libs/backbone/0.9.2/backbone.js"></script>
+    <script src="libs/leaflet/0.4.4/leaflet-src.js"></script>
+    
+    <script src="models.js"></script>
+    <script src="view-map.js"></script>
+    <script src="app.js"></script>
+    
+    <script>
+      var S = Shareabouts;
+      
+      $(function() {
+        S.app = new S.App()
+      });
+    </script>
+    
+  </body>
+
+</html>
