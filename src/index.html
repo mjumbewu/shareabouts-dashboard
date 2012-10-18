@@ -13,7 +13,7 @@
 
   </head>
 
-  <body>
+  <body class="shareabouts">
 
     <div class="navbar">
       <div class="navbar-inner">
@@ -41,7 +41,18 @@
           <div class="span9">
             <div id="map"></div>
           </div>
-          <div class="span3 hidden-phone">Sidebar</div>
+          
+          <div id="dataset-list-wrapper" class="span3 hidden-phone">
+            <h3>Datasets</h3>
+            
+            <ul id="dataset-list"></ul>
+            
+            <form id="new-dataset-form" class="form-inline">
+              <legend>Add Another Dataset</legend>
+              <input name="url" type="text" placeholder="Dataset URL">
+              <button class="btn" type="submit">+</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -58,6 +69,7 @@
     
     <script src="models.js"></script>
     <script src="view-map.js"></script>
+    <script src="view-dataset-list.js"></script>
     <script src="app.js"></script>
     
     <script>

@@ -39,3 +39,7 @@ body {
   left:0;
   bottom:0;
 }
+
+.shareabouts input {
+  height: auto;
+}
